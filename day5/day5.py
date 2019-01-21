@@ -20,7 +20,7 @@ def is_nice_string2(word):
 
     if not re.search(r'([a-z][a-z]).*\1', word):
         return False
-    if not re.search((r'([a-z])[a-z]\1'), word):
+    if not re.search(r'([a-z])[a-z]\1', word):
         return False
 
     return True
